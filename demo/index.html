@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>cloud-shader</title>
+    <style>
+      :root { --day: #f5f3f2; --night: #0a0a0a; }
+      * { box-sizing: border-box; }
+      body { margin: 0; font: 16px/1.5 system-ui, sans-serif; background: var(--day); color: #1c1b1a; transition: background 300ms; }
+      body.night { background: var(--night); color: #ecebe9; }
+      .hero { height: min(660px, 100svh); display: grid; place-items: center; text-align: center; padding: 0 16px; }
+      h1 { margin: 0; font-size: clamp(40px, 8vw, 72px); font-weight: 600; letter-spacing: -0.03em; }
+      p { margin: 8px 0 24px; opacity: 0.7; }
+      button { font: inherit; padding: 8px 18px; border-radius: 999px; border: 1px solid currentColor; background: transparent; color: inherit; cursor: pointer; }
+      main { max-width: 640px; margin: 0 auto; padding: 48px 16px 96px; }
+      code { font: 14px ui-monospace, monospace; }
+    </style>
+  </head>
+  <body>
+    <section class="hero" id="hero">
+      <div>
+        <h1>cloud-shader</h1>
+        <p>An animated WebGL sky for your hero section.</p>
+        <button id="toggle" type="button">Switch to night</button>
+      </div>
+    </section>
+    <main>
+      <p><code>npm install cloud-shader</code></p>
+    </main>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
